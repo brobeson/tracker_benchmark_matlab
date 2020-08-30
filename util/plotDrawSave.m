@@ -51,8 +51,14 @@ for idxTrk=indexSort(1:rankNum)
     i=i+1;
 end
 
-
-legend1=legend(tmpName,'Interpreter', 'none','fontsize',fontSizeLegend);
+% legend() in GNU Octave appears to behave differently from Matlab with respect
+% to parameter parsing. Thus, the function must be called differently depending
+% on the interpreter running the script.
+if (is_octave)
+    legend1=legend(tmpName);
+else
+    legend1=legend(tmpName,'Interpreter', 'none','FontSize',fontSizeLegend);
+end
 title(titleName,'fontsize',fontSize);
 xlabel(xLabelName,'fontsize',fontSize);
 ylabel(yLabelName,'fontsize',fontSize);

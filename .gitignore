@@ -1,4 +1,6 @@
 # These directories contain binary files. I don't want binary in the repository.
+figs/
+perfMat/
 results/
 trackers/
 
