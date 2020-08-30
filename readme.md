@@ -1,2 +1,4 @@
 # tracker_benchmark_matlab
-The Matlab version of the Visual Tracker Benchmark.
+
+A "fork" of the Matlab version of the [Visual Tracker
+Benchmark](http://cvlab.hanyang.ac.kr/tracker_benchmark/index.html).
