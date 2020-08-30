@@ -1,0 +1,6 @@
+# These directories contain binary files. I don't want binary in the repository.
+results/
+trackers/
+
+# No need to track a temporary directory for internal logs and such.
+tmp/
